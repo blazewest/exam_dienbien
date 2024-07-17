@@ -1,0 +1,20 @@
+{
+    'name': 'Survey dien bien',
+    'version': '1.0',
+    'summary': 'Module Survey dien bien',
+    'category': 'Tools',
+    'author': 'Duy Hung',
+    'depends': ['base','survey'],
+    'data': [
+        'security/ir.model.access.csv',
+        # 'views/views.xml',
+        # 'data/ir_cron_data.xml',
+        # 'data/email_template.xml',
+        # 'data/server_action.xml',
+        'views/category_question_views.xml',
+        'views/survey_question_views.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
+}

@@ -9,4 +9,4 @@ class SurveyQuestion(models.Model):
         ('tb', 'Trung Bình'),
         ('kho', 'Khó')], string='Mức độ câu hỏi', default='de', required=True)
     category_group_ids = fields.Many2many('category.question')
-    survey_id = fields.Many2many('survey.survey')
+    # survey_id = fields.Many2one('survey.survey', string='Survey', ondelete='cascade')
